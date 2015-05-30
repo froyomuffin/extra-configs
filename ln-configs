@@ -1,0 +1,13 @@
+#!/bin/bash
+
+SELFDIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+CONFIGDIR=config
+HOMECONFIGDIR=~/.config
+
+CONFIGCONTENT=`ls $CONFIGDIR`
+
+for CONTENT in $CONFIGCONTENT
+do
+    ln -s "$SELFDIR/$CONFIGDIR/$CONTENT" $HOMECONFIGDIR
+done
