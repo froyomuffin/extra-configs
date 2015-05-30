@@ -1,0 +1,7 @@
+#!/bin/bash
+
+SELFDIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+while true; do echo "%{r}"`conky -i 1 -c $SELFDIR/conkyconfig`; sleep 1; done | lemonbar -p -gx20 -B\#333333
+
+wait

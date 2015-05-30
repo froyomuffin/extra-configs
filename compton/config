@@ -18,9 +18,9 @@ shadow-ignore-shaped = true;    # Avoid drawing shadow on all shaped windows
 
 # Opacity
 menu-opacity = 0.9;         # The opacity for menus. (default 1.0)
-inactive-opacity = 0.0;         # Default opacity of inactive windows. (0.0 - 1.0)
-# active-opacity = 0.8;         # Default opacity for active windows. (0.0 - 1.0)
-# frame-opacity = 0.8;          # Opacity of window titlebars and borders. (0.1 - 1.0)
+inactive-opacity = 0.9;         # Default opacity of inactive windows. (0.0 - 1.0)
+active-opacity = 1.0;         # Default opacity for active windows. (0.0 - 1.0)
+frame-opacity = 0.7;          # Opacity of window titlebars and borders. (0.1 - 1.0)
 # inactive-opacity-override = true; # Let inactive opacity set by 'inactive-opacity' overrides
                     # value of _NET_WM_OPACITY. Bad choice.
 alpha-step = 0.06;          # XRender backend: Step size for alpha pictures. Increasing
@@ -58,7 +58,7 @@ detect-client-opacity = true;   # Detect _NET_WM_OPACITY on client windows, usef
                 # managers not passing _NET_WM_OPACITY of client windows to frame
                 # windows.
 refresh-rate = 0;       # For --sw-opti: Specify refresh rate of the screen. 0 for auto.
-vsync = "none";         # "none", "drm", "opengl", "opengl-oml", "opengl-swc", "opengl-mswc"
+vsync = "opengl";         # "none", "drm", "opengl", "opengl-oml", "opengl-swc", "opengl-mswc"
                 # See man page for more details.
 dbe = false;            # Enable DBE painting mode. Rarely needed.
 paint-on-overlay = true;    # Painting on X Composite overlay window. Recommended.

@@ -17,3 +17,13 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 export PATH=$PATH:/home/tw/bin/:/git/toolbox/bin/
 
 export ANDROID_HOME=/opt/android-sdk
+
+# Start pulseaudio
+if [ -z `pidof pulseaudio` ]
+then
+    echo "Starting pulseaudio"
+    pulseaudio -D
+fi
+
+# GUI
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
