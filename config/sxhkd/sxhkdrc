@@ -83,6 +83,28 @@ super + Escape
 super + ctrl + shift + s
     i3lock -i ~/Wallpapers/W_2014_361_DARKWING.png -c 000000 -e && systemctl suspend
 
+# Moving windows
+super + button{1}
+    bspc pointer -g move
+
+# Moving windows
+super + !button{1-3}
+    bspc pointer -t %i %i
+
+# Moving windows
+super + @button{1-3}
+    bspc pointer -u
+
+# Music bindings
+super + F11
+    mpc prev
+
+super + F12
+    mpc next
+
+super + F9
+    mpc toggle
+
 # =============================================================================
 # Uncharacterized or Unused commands
 # =============================================================================
@@ -122,8 +144,8 @@ super + ctrl + shift + s
 #super + apostrophe
 #    bspc window -s last
 
-#super + button{1-3}
-#    bspc pointer -g {move,resize_side,resize_corner}
+# Window sizing
+#super + button{2,3}
+#    bspc pointer -g {resize_side,resize_corner}
 
-#super + @button{1-3}
-#    bspc pointer -u
+
