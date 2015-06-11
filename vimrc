@@ -64,8 +64,8 @@ let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 
 " CPP
 let g:cpp_class_scope_highlight=1
-map <C-n><C-n> :e %<.cpp><CR>
-map <C-n> :e %<.h><CR>
+map <C-n><C-n> :e %<.cpp<CR>
+map <C-n> :e %<.h<CR>
 
 " General VIM
 syntax on
