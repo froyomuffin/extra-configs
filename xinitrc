@@ -5,7 +5,7 @@ xsetroot -cursor_name left_ptr
 unclutter -idle 3 &
 
 # Disable screen blanking
-xset s blanking off
+xset s noblank
 
 # bspwm
 sxhkd &
