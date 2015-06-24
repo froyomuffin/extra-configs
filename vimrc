@@ -52,6 +52,9 @@ cs add cscope.out
 " CTags
 set tags=./tags,tags;$HOME
 
+" YCM
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/youcompleteme/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
 " CTRL-P
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ --ignore .git
