@@ -68,7 +68,7 @@ super + ctrl + {1-9}
 
 # Terminal
 super + Return
-    gnome-terminal
+    urxvt
 
 # Run
 super + space
