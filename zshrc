@@ -33,3 +33,4 @@ export ANDROID_HOME=/opt/android-sdk
 # Aliases
 alias ls='ls --color=auto'
 alias vi='vim'
+alias open='xdg-open'
