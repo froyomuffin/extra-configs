@@ -16,6 +16,7 @@ compinit
 # Mine
 # =========
 export PS1='[%n@%m %~]|$ '
+export VISUAL='vim'
 
 # Add time to history
 export HISTTIMEFORMAT="%d/%m/%y %T "
@@ -30,7 +31,19 @@ export ANDROID_HOME=/opt/android-sdk
 # Start byobu
 [[ -z $(pidof tmux) ]] && echo "Starting byobu" && byobu
 
-# Aliases
+# General Aliases
 alias ls='ls --color=auto'
 alias vi='vim'
 alias open='xdg-open'
+
+# Clipboard (xclip)
+alias c="xclip -selection clipboard"
+alias v="xclip -o -selection clipboard"
+
+# Clang
+alias cl11="clang++ -std=c++11"
+
+# Bash habbits
+alias .="source"
+bindkey -v
+bindkey '^R' history-incremental-search-backward
