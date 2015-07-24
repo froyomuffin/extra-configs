@@ -105,6 +105,23 @@ super + F12
 super + F9
     mpc toggle
 
+# Mouse bindings use 'xev' to find the mouse button and 'xbindkeys -k'
+# Forward
+#button {9}
+#    xte 'key leftbracket'    
+
+# Back
+#button {8}
+#    xte 'key rightbracket'    
+
+# Zoom
+#button {13}
+#    xte 'key backslash'    
+
+# Hover
+#button {10}
+#    xte 'key apostrophe'
+
 # =============================================================================
 # Uncharacterized or Unused commands
 # =============================================================================
